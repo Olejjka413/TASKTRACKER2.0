@@ -1,7 +1,7 @@
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./general.scss";
+@use "./variables.scss";
+@use "./mixins.scss";
+@use "./general.scss";
 
-@import "./header.scss";
-@import "./tasks.scss";
-@import "./footer.scss";
+@use "/blocks/header.scss";
+@use "/blocks/tasks.scss";
+@use "/blocks/footer.scss";
