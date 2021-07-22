@@ -1,5 +1,7 @@
+@use "../variables.scss";
+
 footer {
-	background-color: $accent;
+	background-color: variables.$accent;
 	text-align: center;
 	height: 30px;
 	padding-top: 8px;

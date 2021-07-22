@@ -1,8 +1,10 @@
+@use "../variables.scss";
+
 .tasks{
 
 	&:nth-child(even)
 	{
-		background-color:$gray;
+		background-color:variables.$gray;
 		.tasks__heading {
 			padding-top: 2vh;
 			}
@@ -28,7 +30,7 @@
 	}
 
 	&__item {
-		border: $border;
+		border: variables.$border;
 		border-radius: 10px;
 		width: 18vw;
 		min-width: 200px;
