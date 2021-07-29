@@ -1,7 +1,9 @@
+@use "./mixins.scss";
+
 *,
 *::before,
 *::after {
-  @include reset;
+  @include mixins.reset;
   box-sizing: border-box;
 }
 
