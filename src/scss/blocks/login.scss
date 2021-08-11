@@ -1,0 +1,35 @@
+@use "../variables.scss";
+.login {
+    &__wrapper {
+        margin-left: 10vw;
+
+    }
+    &__form {
+       
+        display: flex;
+        flex-direction: column;
+
+        input {
+            padding: 10px;
+            width: 220px;
+            border: none;
+            margin-bottom: 15px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        button {
+            border: none;
+            
+            height: 30px;
+            border-radius: 10px;
+            background-color: variables.$bright ;
+        }
+
+    }
+}
+
+.registration__link {
+    margin-top: 15px;
+    margin-left: 0;
+    text-align: center;
+}

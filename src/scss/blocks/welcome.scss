@@ -4,12 +4,13 @@
     height: 100vh;
     background-color: variables.$accent;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 
     &__text {
-        margin-left: 15vw;
+        margin-left: 10vw;
+        
         margin-right: 2vw;
 
         h1 {
@@ -27,11 +28,14 @@
 
     }
     &__img{
+        margin-left: auto;
         height: 100vh;
         img {
         height: 100%;
         }
     }
+
+    
 
     &__links {
         display: flex;
