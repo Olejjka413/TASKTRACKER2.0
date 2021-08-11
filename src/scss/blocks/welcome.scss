@@ -3,4 +3,47 @@
 .welcome {
     height: 100vh;
     background-color: variables.$accent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__text {
+        margin-left: 15vw;
+        margin-right: 2vw;
+
+        h1 {
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            }
+
+        p { margin-bottom: 8px;
+            color: white;
+            font-size: 16px;
+            max-width: 30vw;
+    }
+
+    }
+    &__img{
+        height: 100vh;
+        img {
+        height: 100%;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.login__link {
+    color: rgb(42, 10, 94);
+    margin-left: 20px;
+
+    &:hover {
+        color: white;
+    }
 }
