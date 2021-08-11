@@ -1,0 +1,6 @@
+@use "../variables.scss";
+
+.welcome {
+    height: 100vh;
+    background-color: variables.$accent;
+}

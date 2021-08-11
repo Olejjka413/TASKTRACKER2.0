@@ -2,6 +2,8 @@
 @use "./mixins.scss";
 @use "./general.scss";
 
+
+@use "./blocks/welcome.scss";
 @use "./blocks/header.scss";
 @use "./blocks/addbutton.scss";
 @use "./blocks/tasks.scss";
