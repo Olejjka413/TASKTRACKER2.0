@@ -2,13 +2,9 @@
 
 .tasks{
 
-	&:nth-child(even)
+	&:nth-child(odd)
 	{
 		background-color:variables.$gray;
-		.tasks__heading {
-			padding-top: 2vh;
-			}
-
 	}
 
 	&__heading {
@@ -16,7 +12,8 @@
 			font-size: 20px;
 			text-transform: uppercase;
 			text-align: center;
-			margin-top: 2vh;
+
+     padding-top: 2vh;
 			margin-bottom: 2vh;
 		}
 
@@ -36,6 +33,7 @@
 		min-width: 200px;
 		margin-bottom: 4vh;
 		margin-left: 20px;
+    background-color: white;
 
 
 
