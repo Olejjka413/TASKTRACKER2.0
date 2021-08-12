@@ -1,7 +1,7 @@
 @use "../variables.scss";
 
 footer {
-	background-color: variables.$accent;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(6, 194, 231) 0%, rgba(54,118,232,1) 100%);
 	text-align: center;
 	height: 30px;
 	padding-top: 8px;
