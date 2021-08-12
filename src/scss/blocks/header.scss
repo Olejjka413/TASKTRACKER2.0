@@ -1,17 +1,24 @@
 @use "../variables.scss";
 
 .header {
-	padding: 1vh;
+	padding: 20px;
 	width: 100%;
-	height: 10vh;
+	height: 70px;
 	background-color: variables.$accent;
+	
 
 
-	&__wrapper {display: flex;}
+	&__wrapper {
+		max-width: 1200px;
+		margin: auto;
+		
+		display: flex;
+		justify-content: center;
+	}
 
 	&__logo {
-		margin-left: 10px;
-		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: auto;
 		display: flex;
 
 		h1 {
@@ -21,24 +28,27 @@
 		}
 	}
 
-	&__login {
-		padding-top: 1vh;
+	&__logout {
+		display: flex;
+		flex-direction: column;
+		
 		margin-left: auto;
+		align-items: center;
 
-		.login__wrapper {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			padding-bottom: 10px;
+		a {
+			color: rgb(42, 10, 94);
+			&:hover {
+				color: white;
+			}
 		}
 
-		a {color: black;}
+		
 	}
 }
 
 @media (max-width: 400px)  {
   h1 {
 
-    font-size: 20px;
+    font-size: 15px;
   }
 }
