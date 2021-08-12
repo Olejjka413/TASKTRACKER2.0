@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 
 <html lang="ru">
+
 <head>
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Task-tracker | Редактировать задачу</title>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 
-<body >
+<body>
 	<header class="header">
 		<div class="header__wrapper">
-					<div class="header__logo">
+			<div class="header__logo">
 
-						<h1>Task tracker</h1>
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
-							<path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
-							<path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
-						  </svg>
-					</div>
+				<h1>Task tracker</h1>
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+					class="bi bi-check2-all" viewBox="0 0 16 16">
+					<path
+						d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+					<path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+				</svg>
+			</div>
 
-					<div class="header__logout">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-							<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-							<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-						</svg>
-						 
-						<a href="index.html">Выход</a>
-					</div>
+			<div class="header__logout">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+					class="bi bi-person-circle" viewBox="0 0 16 16">
+					<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+					<path fill-rule="evenodd"
+						d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+				</svg>
+
+				<a href="index.html">Выход</a>
+			</div>
 
 		</div>
 
@@ -40,34 +47,52 @@
 
 	<main>
 
-    <section class="edit">
-      <form class="edit__form">
-		<label for="name">Название задачи</label>
-        <input type="text" id = "name">
-		<select>
-			<option>Запланированные</option>
-			<option>Текущие</option>
-			<option>Выполненные</option>
-			<option>Проваленные</option>
-		</select>
-		<label for="date">Срок выполнения</label>
-        <input type="date" id = "date">
-        <textarea name="" id="" cols="30" rows="5" placeholder="Подробности задачи"></textarea> 
-		<button type ="submit" class="submit">Сохранить</button>
-		<button type ="submit" class="submit">Удалить</button>
-      </form>
+		<section class="edit">
+		
+			<form class="edit__form">
+				<div class="edit__form-required">
+					<label>Название задачи
+						<input style="display: block;" type="text">
+					</label>
 
-    </section>
+					<label>Группа задачи
+						<select style="display: block;">
+							<option>Запланированные</option>
+							<option>Текущие</option>
+							<option>Выполненные</option>
+							<option>Проваленные</option>
+						</select>
+					</label>
 
-  </main>
+					<label>Срок выполнения
+						<input style="display: block" type="date">
+					</label>
+				</div>
+
+				<label>Подробности задачи
+					<textarea name="" cols="30" rows="5" style="display: block"></textarea>
+				</label>
+			</form>
+			<div class="edit__actions">
+				<button type="submit" class="submit">Сохранить</button>
+				<button type="submit" class="submit">Удалить</button>
+			</div>
+		</section>
+
+		<a class ="back" href="tasks.html">
+			<p class="hidden">Назад</p>
+		</a>
+
+	</main>
 	<footer class="footer">
 
 
-				<p class="copyright">2021</p>
+		<p class="copyright">2021</p>
 
 
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 </html>
