@@ -15,29 +15,31 @@
 <body>
 <main>
     <section class ="welcome">
-        <div class ="welcome__text">
-            <div class="logo">
-              <h1 class="visually-hidden">Task-tracker</h1>
-              <img class = "logo__img"src ="img/logo.svg">
-            </div>
+      <div class ="welcome__text">
 
-            <p>
-                 Это сервис для тех, кому нужен простой и удобный инструмент для отслеживания задач.
-                 </p>
-                 <p>"Task-tracker" позволяет работать как в одиночку, так и в команде. Ничего лишнего, чтобы не отвлекать вас от самого главного.</p>
-            </p>
-
+        <div class="logo">
+          <h1 class="logo__heading visually-hidden">Task-tracker</h1>
+          <img class = "logo__img"src ="img/logo.svg">
         </div>
+
+        <p class="welcome__description">
+             Это сервис для тех, кому нужен простой и удобный инструмент для отслеживания задач.
+        </p>
+        <p class="welcome__description">
+               "Task-tracker" позволяет работать как в одиночку, так и в команде. Ничего лишнего, чтобы не отвлекать вас от самого главного.</p>
+        </p>
+
+      </div>
         <svg class="vertical" width="2px">
             <line x1="0" y1="0" x2="0" y2="200" style="stroke:rgb(255, 255, 255);stroke-width:2" />
          </svg>
         <div class = "login__wrapper">
             <form class="login__form">
-                <input type="text" placeholder="Логин">
-                <input type="text" placeholder="Пароль">
-				        <input type="text" placeholder="Повторите пароль">
-				        <input type="text" placeholder="Команда">
-                <button class ="submit" type="submit">Зарегестрироваться</button>
+                <input class ="login__input" type="text" placeholder="Логин">
+                <input class ="login__input" type="text" placeholder="Пароль">
+				        <input class ="login__input" type="text" placeholder="Повторите пароль">
+				        <input class ="login__input" type="text" placeholder="Команда">
+                <button class ="login__submit submit" type="submit">Зарегестрироваться</button>
                 <a class = "login__link registration__link" href ="login.html">Войти</a>
 
 

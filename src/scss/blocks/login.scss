@@ -8,8 +8,9 @@
 
         display: flex;
         flex-direction: column;
+    }
 
-        input {
+      &__input {
             padding: 10px;
             width: 220px;
             border: none;
@@ -17,20 +18,21 @@
             height: 30px;
             border-radius: 10px;
         }
-        button {
-            border: none;
 
-            height: 30px;
-            border-radius: 10px;
-            background-color: variables.$bright ;
-        }
 
     }
-}
 
 .registration__link {
     margin-top: 15px;
     margin-left: 0;
     text-align: center;
     font-size: 14px;
+}
+
+.submit {
+  border: none;
+
+  height: 30px;
+  border-radius: 10px;
+  background-color: variables.$bright ;
 }

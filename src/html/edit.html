@@ -22,7 +22,7 @@
 			<div class="header__logo">
 
         <div class="logo">
-          <h1 class="visually-hidden">Task-tracker</h1>
+          <h1 class="logo__heading visually-hidden">Task-tracker</h1>
           <img class = "logo__img"src ="img/logo.svg">
         </div>
 
@@ -49,13 +49,13 @@
 		<section class="edit">
 
 			<form class="edit__form">
-				<div class="edit__form-required">
-					<label>Название задачи
-						<input type="text">
+				<div class="edit__form--required">
+					<label class="edit__label" >Название задачи
+						<input class="edit__input" type="text">
 					</label>
 
-					<label>Группа задачи
-						<select >
+					<label class="edit__label">Группа задачи
+						<select class="edit__select">
 							<option>Запланированные</option>
 							<option>Текущие</option>
 							<option>Выполненные</option>
@@ -63,23 +63,24 @@
 						</select>
 					</label>
 
-					<label>Срок выполнения
-						<input type="date">
+					<label class="edit__label">Срок выполнения
+						<input class="edit__input" type="date">
 					</label>
 				</div>
 
-				<label>Подробности задачи
-					<textarea  cols="30" rows="5"></textarea>
+				<label class="edit__label">Подробности задачи
+					<textarea  class="edit__textarea" cols="30" rows="5"></textarea>
 				</label>
 			</form>
+
 			<div class="edit__actions">
 				<button type="submit" class="edit__button submit">Сохранить</button>
 				<button type="submit" class="edit__button submit">Удалить</button>
 			</div>
 		</section>
 
-		<a class ="back" href="tasks.html">
-			<p class="visually-hidden">Назад</p>
+		<a class="back" href="tasks.html">
+			<p class="back__text visually-hidden">Назад</p>
 		</a>
 
 	</main>
@@ -90,6 +91,7 @@
 
 
 	</footer>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

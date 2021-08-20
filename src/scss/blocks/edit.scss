@@ -9,54 +9,62 @@
         flex-flow: row wrap;
         justify-content: center;
 
-        &-required {
+        &--required {
             margin-right: 40px;
 
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
 
-            label {
-                margin-bottom: 15px;
-                font-size: 18px;
-            }
-        }
 
-        &-details {
-            label {
-                font-size: 18px;
-            }
         }
     }
+
     &__actions {
         margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-        button {
-            margin-right: 20px;
-            background-color: variables.$bright;
-            border: none;
-            padding: 10px 14px;
-            font-size: 16px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            &:hover {
-                background-color: variables.$accent;
-            }
-        }
     }
-  
-}
 
+    &__button {
+      margin-right: 20px;
+      padding: 8px 14px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+          background-color: variables.$accent;
+      }
+  }
+
+    &__label {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    &__input {
+      margin-top: 5px;
+    }
+
+    &__select {
+      margin-top: 5px;
+    }
+
+    &__textarea {
+      margin-top: 5px;
+      max-width: 400px;
+      max-height: 300px;
+    }
+}
 
 .back {
     display: block;
     margin: 15px auto;
-    
-
     height:40px;
     width:40px;
     font-size: 40px;
@@ -66,12 +74,10 @@
     padding-left: 13px;
     padding-top: 4px;
     background-color: variables.$bright;
-
     background-image: url('/img/back.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-
     transition: background-color 0.3s;
 
     &:hover {

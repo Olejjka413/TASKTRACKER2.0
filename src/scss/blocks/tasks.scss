@@ -1,7 +1,43 @@
 @use "../variables.scss";
 
+.new-task {
+  margin: 30px auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  &__link {
+
+    margin-left: 10px;
+    height:50px;
+    width:50px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    border-radius:50%;
+    padding-left: 13px;
+
+    background-color: variables.$bright;
+
+    background-image: url('/img/plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: variables.$accent;
+    }
+  }
+
+}
+
 .tasks{
-	
+
 	&:last-child{margin-bottom: 40px;}
 	&:nth-child(even)
 	{
@@ -22,13 +58,13 @@
 		max-width: 1200px;
 		margin: auto;
 
-		
+
 		list-style: none;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		align-items: flex-start;
-	
+
 	}
 
 	&__item {
@@ -85,9 +121,9 @@
 			color: rgb(42, 10, 94);
 			font-size: 14px;
 			text-align:right;
-			
+
 			img {
-				
+
 				margin: auto;
 				padding-right: 5px;
 
