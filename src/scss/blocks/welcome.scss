@@ -9,23 +9,17 @@
     align-items: center;
 
 
-    &__text {
-        margin-left: 10vw;
-        
-        margin-right: 2vw;
+&__text {
+      margin-left: 10vw;
+      margin-right: 2vw;
 
-        h1 {
-            font-family: 'Fredoka One', cursive;
-            color: white;
-            font-size: 30px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            }
 
-        p { margin-bottom: 8px;
-            color: white;
-            font-size: 16px;
-            max-width: 30vw;
+
+
+      p { margin-bottom: 8px;
+          color: white;
+          font-size: 16px;
+          max-width: 30vw;
     }
 
     }
@@ -37,7 +31,7 @@
         }
     }
 
-    
+
 
     &__links {
         display: flex;
@@ -52,4 +46,12 @@
     &:hover {
         color: white;
     }
+}
+
+.logo {
+
+  img {
+    height: 25px;
+    margin-bottom: 10px;
+  }
 }
