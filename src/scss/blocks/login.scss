@@ -1,4 +1,7 @@
 @use "../variables.scss";
+@use "../mixins.scss";
+
+
 .login {
     &__wrapper {
         margin-left: 10vw;
@@ -19,6 +22,10 @@
             border-radius: 10px;
         }
 
+      &__submit {
+        @include mixins.submit;
+      }
+
 
     }
 
@@ -29,10 +36,4 @@
     font-size: 14px;
 }
 
-.submit {
-  border: none;
 
-  height: 30px;
-  border-radius: 10px;
-  background-color: variables.$bright ;
-}

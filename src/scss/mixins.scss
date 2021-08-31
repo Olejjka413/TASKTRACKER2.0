@@ -1,4 +1,18 @@
+@use "./variables.scss";
+
 @mixin reset {
   padding: 0;
   margin: 0;
+}
+
+@mixin submit {
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  background-color: variables.$bright;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+      background-color: variables.$accent;
+  }
 }
