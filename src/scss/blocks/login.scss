@@ -2,7 +2,22 @@
 @use "../mixins.scss";
 
 
+
 .login {
+  :nth-child(2) {
+    margin-left: 18px;
+}
+
+&__link {
+    color: rgb(42, 10, 94);
+    margin-top: 10px;
+    text-align: center;
+
+
+  &:hover {
+      color: white;
+  }
+}
     &__wrapper {
         margin-left: 10vw;
 
@@ -29,11 +44,6 @@
 
     }
 
-.registration__link {
-    margin-top: 15px;
-    margin-left: 0;
-    text-align: center;
-    font-size: 14px;
-}
+
 
 
