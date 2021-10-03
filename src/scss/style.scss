@@ -5,10 +5,13 @@
 
 @use "./blocks/welcome.scss";
 @use "./blocks/login.scss";
-@use "./blocks/header.scss";
+
 @use "./blocks/tasks.scss";
 @use "./blocks/item.scss";
 @use "./blocks/edit.scss";
 @use "./blocks/registration-link.scss";
 @use "./blocks/back-button.scss";
+
+
+@use "./blocks/header.scss";
 @use "./blocks/footer.scss";
