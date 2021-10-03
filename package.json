@@ -44,5 +44,8 @@
   },
   "engines": {
     "node": "14"
+  },
+  "dependencies": {
+    "axios": "^0.22.0"
   }
 }
