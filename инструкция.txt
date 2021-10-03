@@ -1,0 +1,5 @@
+1. Создать окружение python -m venv venv
+2. Активировать его venv/scripts/activate
+3. Установить зависимости pip install -r requirements.txt
+4. Включить vpn для поликека
+5. python manage.py runserver
